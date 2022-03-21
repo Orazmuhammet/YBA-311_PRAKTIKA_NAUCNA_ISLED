@@ -18,25 +18,25 @@ namespace LibraryDemo
         /// </summary>
         private static void Main()
         {
-            var brand = new Brand(1, "Samsung galaxy s21", "Rossiya");
+            var model = new Model(1, "Samsung galaxy s21", "Rossiya");
 
-            var phone = new Phone(1, 2021, "синий", 60000, brand);
+            var phone = new Phone(1, 2021, "синий", 60000, model);
 
             var worker = new Worker(1, "Нурмухаммедов О.Б", "Продавец");
 
-            var carsale = new Carsale(1, DateTime.Now, 60000, phone, worker);
+            var phoneSale = new PhoneSale(1, DateTime.Now, 60000, phone, worker);
 
-            Console.WriteLine($"{phone} --> {brand}");
+            Console.WriteLine($"{phone} --> {model}");
 
-            Console.WriteLine($"{carsale} --> {phone}");
+            Console.WriteLine($"{phoneSale} --> {phone}");
 
-            Console.WriteLine($"{carsale} --> {worker}");
+            Console.WriteLine($"{phoneSale} --> {worker}");
 
             using var sessionFactory = NHibernateConfigurator.GetSessionFactory(showSql: true);
             using var session = sessionFactory.OpenSession();
-            session.Save(brand);
+            session.Save(model);
             session.Save(phone);
-            session.Save(carsale);
+            session.Save(phoneSale);
             session.Save(worker);
             session.Flush();
         }

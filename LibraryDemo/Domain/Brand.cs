@@ -9,42 +9,42 @@ namespace Domain
     using Staff.Extensions;
 
     /// <summary>
-    ///  класс Бренд (марка автомобиля).
+    ///  класс Model (марка автомобиля).
     /// </summary>
-    public class Brand
+    public class Model
     {
 
         /// <summary>
         /// Конструктор инициализации 
         /// </summary>
 
-        public Brand(int id_brand, string name_brand, string country)
+        public Model(int id_model, string name_model, string country)
         {
-            this.Id_brand = id_brand;
-            this.Name_brand = name_brand ?? throw new ArgumentOutOfRangeException(nameof(name_brand));
+            this.Id_model = id_model;
+            this.Name_model = name_model ?? throw new ArgumentOutOfRangeException(nameof(name_model));
             this.Country = country ?? throw new ArgumentOutOfRangeException(nameof(country));
         }
 
         /// <summary>
-        /// Инициализирует новый экземпляр класса <see cref="Brand"/>.
+        /// Инициализирует новый экземпляр класса <see cref="Model"/>.
         /// </summary>
         // в этом месте  protected - только для ORM
         //
         [Obsolete("For ORM only", true)]
-        protected Brand()
+        protected Model()
         {
         }
 
         /// <summary>
         /// Уникальный идентификатор.
         /// </summary>
-        public virtual int Id_brand { get; protected set; }
+        public virtual int Id_model { get; protected set; }
 
 
         /// <summary>
-        /// Брэнд.
+        /// Model
         /// </summary>
-        public virtual string Name_brand { get; protected set; }
+        public virtual string Name_model { get; protected set; }
 
         /// <summary>
         /// Страна.
@@ -53,16 +53,16 @@ namespace Domain
 
 
         /// <summary>
-        /// Коллекция машин.
+        /// Коллекция Model.
         /// </summary>
         public virtual ISet<Phone> Phons { get; protected set; } = new HashSet<Phone>();
 
         
         /// <summary>
-        /// Добавить машине бренд.
+        /// Добавить phone model.
         /// </summary>
-        /// <param name="phone"> Машина. </param>
-        /// <returns> <see langword="true"/> если машине был добавлен бренд. </returns>
+        /// <param name="phone"> Phone. </param>
+        /// <returns> <see langword="true"/> если телефоне был добавлен model. </returns>
         public virtual bool AddPhone(Phone phone)
         {
             return this.Phons.TryAdd(phone) ?? throw new ArgumentNullException(nameof(phone));
@@ -74,7 +74,7 @@ namespace Domain
 
         public override string ToString()
         {
-            return $"{this.Name_brand} {this.Country}";
+            return $"{this.Name_model} {this.Country}";
         }
 
     }

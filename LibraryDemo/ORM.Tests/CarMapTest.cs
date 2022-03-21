@@ -11,9 +11,9 @@ namespace ORM.Tests
     using System;
 
     /// <summary>
-    /// Модульные тесты для класса <see cref="ORM.Mappings.CarMap"/>.
+    /// Модульные тесты для класса <see cref="ORM.Mappings.PhoneMap"/>.
     /// </summary>
-    public class CarMapTest : BaseMapTests
+    public class PhoneMapTest : BaseMapTests
     {
         [Test]
         public void PersistenceSpecification_ValidData_Success()
@@ -30,9 +30,9 @@ namespace ORM.Tests
         {
             // arrange
 
-            var brand = new Brand(1, "Samsung galaxy s21", "Rossiya");
+            var model = new Model(1, "Samsung galaxy s21", "Rossiya");
 
-            var phone = new Phone(1, 2021, "синий", 60000, brand);
+            var phone = new Phone(1, 2021, "синий", 60000, model);
 
             // act & assert
             new PersistenceSpecification<Phone>(this.Session)

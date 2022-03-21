@@ -40,7 +40,7 @@ namespace ORM
                 var databaseConfiguration = MsSqlConfiguration.MsSql2012.ConnectionString(
                     x => x
                         .Server(@"ORAZ")
-                        .Database("DemoLibrary2")
+                        .Database("DemoLibrary1")
                         .TrustedConnection());
 
                 if (showSql)

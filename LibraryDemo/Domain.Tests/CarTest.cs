@@ -9,17 +9,17 @@ namespace Domain.Tests
     using NUnit.Framework;
 
     /// <summary>
-    /// The car tests.
+    /// The phone tests.
     /// </summary>
     [TestFixture]
     public class PhoneTest
     {
-        private Carsale carsale;
+        private PhoneSale phoneSale;
 
         [SetUp]
         public void Setup()
         {
-            this.carsale = new Carsale(1, DateTime.Now, 60000);
+            this.phoneSale = new PhoneSale(1, DateTime.Now, 60000);
         }
 
         [Test]
@@ -34,13 +34,13 @@ namespace Domain.Tests
         }
 
         [Test]
-        public void AddCarsaleToPhone_ValidData_Success()
+        public void AddPhoneSaleToPhone_ValidData_Success()
         {
             // arrange
             var phone = GetPhone(2021, "синий", 60000);
 
             // act
-            var result = phone.AddCarsale(this.carsale);
+            var result = phone.AddPhoneSale(this.phoneSale);
 
             // assert
             Assert.AreEqual(true, result);

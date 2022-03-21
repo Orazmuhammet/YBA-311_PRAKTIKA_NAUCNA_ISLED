@@ -9,10 +9,10 @@ namespace Domain.Tests
     using NUnit.Framework;
 
     /// <summary>
-    /// The brand tests.
+    /// The model tests.
     /// </summary>
     [TestFixture]
-    public class BrandTest
+    public class ModelTest
     {
         private Phone phone;
 
@@ -26,29 +26,29 @@ namespace Domain.Tests
         public void ToString_ValidData_Success()
         {
             //arrange
-            var brand = new Brand(1, "Samsung galaxy s21", "Rossiya");
+            var model = new Model(1, "Samsung galaxy s21", "Rossiya");
             //act
-            var result = brand.ToString();
+            var result = model.ToString();
             //assert
             Assert.AreEqual($"Samsung galaxy s21 Rossiya", result);
         }
 
         [Test]
-        public void AddPhoneToBrand_ValidData_Success()
+        public void AddPhoneToModel_ValidData_Success()
         {
             // arrange
-            var brand = GetBrand("Samsung galaxy s21", "Rossiya");
+            var model = GetModel("Samsung galaxy s21", "Rossiya");
 
             // act
-            var result = brand.AddPhone(this.phone);
+            var result = model.AddPhone(this.phone);
 
             // assert
             Assert.AreEqual(true, result);
         }
 
-        private static Brand GetBrand(string name_brand, string country)
+        private static Model GetModel(string name_model, string country)
         {
-            return new Brand(1,name_brand ?? "Samsung galaxy s21", country ?? "Rossiya");
+            return new Model(1,name_model ?? "Samsung galaxy s21", country ?? "Rossiya");
         }
     }
 }

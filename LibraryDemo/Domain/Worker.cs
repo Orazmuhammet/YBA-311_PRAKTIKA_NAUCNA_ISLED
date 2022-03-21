@@ -45,19 +45,19 @@ namespace Domain
         public virtual string Working { get; protected set; }
 
         /// <summary>
-        /// Коллекция машин.
+        /// Коллекция телефон.
         /// </summary>
-        public virtual ISet<Carsale> Carsales { get; protected set; } = new HashSet<Carsale>();
+        public virtual ISet<PhoneSale> PhoneSales { get; protected set; } = new HashSet<PhoneSale>();
 
 
         /// <summary>
         /// Добавить продавца в продажу.
         /// </summary>
-        /// <param name="carsale"> Продажа машины. </param>
+        /// <param name="phoneSale"> Продажа телефоны. </param>
         /// <returns> <see langword="true"/> если продавца добавили в продажу. </returns>
-        public virtual bool AddCarsale(Carsale carsale)
+        public virtual bool AddPhoneSale(PhoneSale phoneSale)
         {
-            return this.Carsales.TryAdd(carsale) ?? throw new ArgumentNullException(nameof(carsale));
+            return this.PhoneSales.TryAdd(phoneSale) ?? throw new ArgumentNullException(nameof(phoneSale));
         }
 
         /// <summary>

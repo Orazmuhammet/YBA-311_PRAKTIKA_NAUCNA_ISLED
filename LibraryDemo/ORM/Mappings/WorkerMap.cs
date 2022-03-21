@@ -24,7 +24,7 @@ namespace ORM.Mappings
             this.Map(x => x.FIO).Not.Nullable();
             this.Map(x => x.Working).Not.Nullable();
 
-            this.HasMany(x => x.Carsales);
+            this.HasMany(x => x.PhoneSales);
         }
     }
 }

@@ -9,15 +9,15 @@ namespace ORM.Mappings
     using FluentNHibernate.Mapping;
 
     /// <summary>
-    /// Класс, описывающий правила отображения <see cref="Carsale"/> на таблицу и наоборот.
+    /// Класс, описывающий правила отображения <see cref="PhoneSale"/> на таблицу и наоборот.
     /// </summary>
-    internal class CarsaleMap : ClassMap<Carsale>
+    internal class PhoneSaleMap : ClassMap<PhoneSale>
     {
-        public CarsaleMap ()
+        public PhoneSaleMap ()
         {
-            this.Table("Carsales");
+            this.Table("PhoneSales");
 
-            this.Id(x => x.Id_carsale).Not.Nullable();
+            this.Id(x => x.Id_phoneSale).Not.Nullable();
 
             this.Map(x => x.Sale_date).Not.Nullable();
             this.Map(x => x.Total_price).Not.Nullable();

@@ -9,22 +9,22 @@ namespace ORM.Mappings
     using FluentNHibernate.Mapping;
 
     /// <summary>
-    /// Класс, описывающий правила отображения <see cref="Brand"/> на таблицу и наоборот.
+    /// Класс, описывающий правила отображения <see cref="Model"/> на таблицу и наоборот.
     /// </summary>
-    internal class BrandMap : ClassMap<Brand>
+    internal class ModelMap : ClassMap<Model>
     {
         /// <summary>
         /// Инициализирует новый экземпляр класса <see cref="BrandMap"/>.
         /// </summary>
-        public BrandMap()
+        public ModelMap()
         {
             // this.Schema("dbo");
 
-            this.Table("Brands");
+            this.Table("Models");
 
-            this.Id(x => x.Id_brand).Not.Nullable();
+            this.Id(x => x.Id_model).Not.Nullable();
 
-            this.Map(x => x.Name_brand).Not.Nullable();
+            this.Map(x => x.Name_model).Not.Nullable();
             this.Map(x => x.Country).Not.Nullable();
 
             this.HasMany(x => x.Phons);

@@ -11,20 +11,20 @@ namespace ORM.Tests
     using System;
 
     /// <summary>
-    /// Модульные тесты для класса <see cref="ORM.Mappings.CarsaleMap"/>.
+    /// Модульные тесты для класса <see cref="ORM.Mappings.PhoneSaleMap"/>.
     /// </summary>
     [TestFixture]
-    public class CarsaleMapTest : BaseMapTests
+    public class PhoneSaleMapTest : BaseMapTests
     {
         [Test]
         public void PersistenceSpecification_ValidSimpleData_Success()
         {
             // arrange
-            var carsale = new Carsale(1, DateTime.Now, 60000);
+            var phoneSale = new PhoneSale(1, DateTime.Now, 60000);
 
             // act & assert
-            new PersistenceSpecification<Carsale>(this.Session)
-                .VerifyTheMappings(carsale);
+            new PersistenceSpecification<PhoneSale>(this.Session)
+                .VerifyTheMappings(phoneSale);
         }
 
         [Test]
@@ -36,11 +36,11 @@ namespace ORM.Tests
 
             var worker = new Worker(1, "Нурмухаммедов О.Б", "Продавец");
 
-            var carsale = new Carsale(1, DateTime.Now, 60000, phone, worker);
+            var phoneSale = new PhoneSale(1, DateTime.Now, 60000, phone, worker);
 
             // act & assert
-            new PersistenceSpecification<Carsale>(this.Session)
-                .VerifyTheMappings(carsale);
+            new PersistenceSpecification<PhoneSale>(this.Session)
+                .VerifyTheMappings(phoneSale);
         }
     }
 }

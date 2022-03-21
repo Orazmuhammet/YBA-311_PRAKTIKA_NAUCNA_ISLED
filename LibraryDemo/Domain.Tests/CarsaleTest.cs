@@ -12,16 +12,16 @@ namespace Domain.Tests
     /// The carsale tests.
     /// </summary>
     [TestFixture]
-    public class CarsaleTest
+    public class PhoneSaleTest
     { 
 
         [Test]
         public void ToString_ValidData_Success()
         {
             //arrange
-            var carsale = new Carsale(1, DateTime.Now, 60000);
+            var phoneSale = new PhoneSale(1, DateTime.Now, 60000);
             //act
-            var result = carsale.ToString();
+            var result = phoneSale.ToString();
             //assert
             Assert.AreEqual($"{DateTime.Now} 60000", result);
         }

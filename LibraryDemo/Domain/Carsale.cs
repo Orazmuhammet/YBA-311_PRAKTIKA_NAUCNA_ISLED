@@ -10,11 +10,11 @@ namespace Domain
     using Staff.Extensions;
 
     /// <summary>
-    /// класс Продажа автомобиля.
+    /// класс Продажа Телефонов.
     /// </summary>
-    public class Carsale
+    public class PhoneSale
     {
-        public Carsale(int id_carsale, DateTime sale_date, double total_price, Phone phone, Worker worker)
+        public PhoneSale(int id_phoneSale, DateTime sale_date, double total_price, Phone phone, Worker worker)
         {
             if (phone == null)
             {
@@ -25,32 +25,32 @@ namespace Domain
             {
                 throw new ArgumentNullException(nameof(worker));
             }
-            this.Id_carsale = id_carsale;
+            this.Id_phoneSale = id_phoneSale;
             this.Sale_date = sale_date;
             this.Total_price = total_price;
         }
 
-        public Carsale(int id_carsale, DateTime sale_date, double total_price)
+        public PhoneSale(int id_phoneSale, DateTime sale_date, double total_price)
         {
-            this.Id_carsale = id_carsale;
+            this.Id_phoneSale = id_phoneSale;
             this.Sale_date = sale_date;
             this.Total_price = total_price;
         }
 
         /// <summary>
-        /// Инициализирует новый экземпляр класса <see cref="Carsale"/>.
+        /// Инициализирует новый экземпляр класса <see cref="PhoneSale"/>.
         /// </summary>
         // в этом месте  protected - только для ORM
         //
         [Obsolete("For ORM only", true)]
-        protected Carsale()
+        protected PhoneSale()
         {
         }
 
         /// <summary>
         /// Уникальный идентификатор.
         /// </summary>
-        public virtual int Id_carsale { get; protected set; }
+        public virtual int Id_phoneSale { get; protected set; }
 
 
         /// <summary>

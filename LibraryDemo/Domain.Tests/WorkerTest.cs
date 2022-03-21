@@ -1,5 +1,5 @@
-﻿// <copyright file="WorkerTest.cs" company="Лёвин И. Д">
-// Copyright (c) Лёвин И. Д. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
 
 namespace Domain.Tests
@@ -14,12 +14,12 @@ namespace Domain.Tests
     [TestFixture]
     public class WorkerTest
     {
-        private Carsale carsale;
+        private PhoneSale phoneSale;
 
         [SetUp]
         public void Setup()
         {
-            this.carsale = new Carsale(1, DateTime.Now, 60000);
+            this.phoneSale = new PhoneSale(1, DateTime.Now, 60000);
         }
 
         [Test]
@@ -40,7 +40,7 @@ namespace Domain.Tests
             var worker = GetWorker("Нурмухаммедов О.Б", "Продавец");
 
             // act
-            var result = worker.AddCarsale(this.carsale);
+            var result = worker.AddPhoneSale(this.phoneSale);
 
             // assert
             Assert.AreEqual(true, result);

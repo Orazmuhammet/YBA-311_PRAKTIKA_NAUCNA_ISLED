@@ -10,19 +10,19 @@ namespace ORM.Tests
     using NUnit.Framework;
 
     /// <summary>
-    /// Модульные тесты для класса <see cref="ORM.Mappings.CarsaleMap"/>.
+    /// Модульные тесты для класса <see cref="ORM.Mappings.PhoneSaleMap"/>.
     /// </summary>
-    public class BrandMapTest : BaseMapTests
+    public class ModeldMapTest : BaseMapTests
     {
         [Test]
         public void PersistenceSpecification_ValidData_Success()
         {
             // arrange
-            var brand = new Brand(1, "Samsung galaxy s21", "Rossiya");
+            var model = new Model(1, "Samsung galaxy s21", "Rossiya");
 
             // act & assert
-            new PersistenceSpecification<Brand>(this.Session)
-                .VerifyTheMappings(brand);
+            new PersistenceSpecification<Model>(this.Session)
+                .VerifyTheMappings(model);
 
         }
     }

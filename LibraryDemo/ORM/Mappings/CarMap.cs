@@ -11,12 +11,12 @@ namespace ORM.Mappings
     /// <summary>
     /// Класс, описывающий правила отображения <see cref="Phone"/> на таблицу и наоборот.
     /// </summary>
-    internal class CarMap : ClassMap<Phone>
+    internal class PhoneMap : ClassMap<Phone>
     {
         /// <summary>
-        /// Инициализирует новый экземпляр класса <see cref="CarMap"/>.
+        /// Инициализирует новый экземпляр класса <see cref="PhoneMap"/>.
         /// </summary>
-        public CarMap()
+        public PhoneMap()
         {
             // this.Schema("dbo");
 
@@ -28,8 +28,8 @@ namespace ORM.Mappings
             this.Map(x => x.Color).Not.Nullable();
             this.Map(x => x.Price).Not.Nullable();
 
-            this.HasMany(x => x.Carsales);
-            this.References(x => x.Brand);
+            this.HasMany(x => x.PhoneSales);
+            this.References(x => x.Model);
         }
     }
 }
