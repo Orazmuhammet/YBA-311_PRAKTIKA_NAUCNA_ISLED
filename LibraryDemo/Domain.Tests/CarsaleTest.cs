@@ -1,5 +1,5 @@
-﻿// <copyright file="CarsaleTest.cs" company="Лёвин И. Д">
-// Copyright (c) Лёвин И. Д. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
 
 namespace Domain.Tests
@@ -19,11 +19,11 @@ namespace Domain.Tests
         public void ToString_ValidData_Success()
         {
             //arrange
-            var carsale = new Carsale(1, DateTime.Now, 650000);
+            var carsale = new Carsale(1, DateTime.Now, 60000);
             //act
             var result = carsale.ToString();
             //assert
-            Assert.AreEqual($"{DateTime.Now} 650000", result);
+            Assert.AreEqual($"{DateTime.Now} 60000", result);
         }
     }
 }

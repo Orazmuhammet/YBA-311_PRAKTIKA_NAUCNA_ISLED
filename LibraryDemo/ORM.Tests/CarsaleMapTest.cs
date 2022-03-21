@@ -1,6 +1,7 @@
-﻿// <copyright file="CarsaleMapTest.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
+
 
 namespace ORM.Tests
 {
@@ -19,7 +20,7 @@ namespace ORM.Tests
         public void PersistenceSpecification_ValidSimpleData_Success()
         {
             // arrange
-            var carsale = new Carsale(1, DateTime.Now, 650000);
+            var carsale = new Carsale(1, DateTime.Now, 60000);
 
             // act & assert
             new PersistenceSpecification<Carsale>(this.Session)
@@ -31,11 +32,11 @@ namespace ORM.Tests
         {
 
             // arrange
-            var car = new Car(1, 1999, "синий", 600000);
+            var phone = new Phone(1, 2021, "синий", 60000);
 
-            var worker = new Worker(1, "Незнайкин О. П.", "Продавец");
+            var worker = new Worker(1, "Нурмухаммедов О.Б", "Продавец");
 
-            var carsale = new Carsale(1, DateTime.Now, 650000, car, worker);
+            var carsale = new Carsale(1, DateTime.Now, 60000, phone, worker);
 
             // act & assert
             new PersistenceSpecification<Carsale>(this.Session)

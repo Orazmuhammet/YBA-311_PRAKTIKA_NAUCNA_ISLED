@@ -1,6 +1,7 @@
-﻿// <copyright file="BrandMapTest.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
+
 
 namespace ORM.Tests
 {
@@ -17,7 +18,7 @@ namespace ORM.Tests
         public void PersistenceSpecification_ValidData_Success()
         {
             // arrange
-            var brand = new Brand(1, "lada vesta", "Россия");
+            var brand = new Brand(1, "Samsung galaxy s21", "Rossiya");
 
             // act & assert
             new PersistenceSpecification<Brand>(this.Session)

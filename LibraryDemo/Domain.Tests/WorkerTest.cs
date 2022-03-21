@@ -19,25 +19,25 @@ namespace Domain.Tests
         [SetUp]
         public void Setup()
         {
-            this.carsale = new Carsale(1, DateTime.Now, 650000);
+            this.carsale = new Carsale(1, DateTime.Now, 60000);
         }
 
         [Test]
         public void ToString_ValidData_Success()
         {
             //arrange
-            var worker = new Worker(1, "Лёвин И. Д.", "Продавец");
+            var worker = new Worker(1, "Нурмухаммедов О.Б", "Продавец");
             //act
             var result = worker.ToString();
             //assert
-            Assert.AreEqual($"Лёвин И. Д. Продавец", result);
+            Assert.AreEqual($"Нурмухаммедов О.Б Продавец", result);
         }
 
         [Test]
         public void AddCarsaleToWorker_ValidData_Success()
         {
             // arrange
-            var worker = GetWorker("Лёвин И. Д.", "Продавец");
+            var worker = GetWorker("Нурмухаммедов О.Б", "Продавец");
 
             // act
             var result = worker.AddCarsale(this.carsale);
@@ -48,7 +48,7 @@ namespace Domain.Tests
 
         private static Worker GetWorker(string fio, string working)
         {
-            return new Worker(1, fio ?? "Лёвин И.Д.", working ?? "Продавец");
+            return new Worker(1, fio ?? "Нурмухаммедов О.Б", working ?? "Продавец");
         }
     }
 }

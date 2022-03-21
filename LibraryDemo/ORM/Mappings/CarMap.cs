@@ -1,6 +1,7 @@
-﻿// <copyright file="Car.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
+
 
 namespace ORM.Mappings
 {
@@ -8,9 +9,9 @@ namespace ORM.Mappings
     using FluentNHibernate.Mapping;
 
     /// <summary>
-    /// Класс, описывающий правила отображения <see cref="Car"/> на таблицу и наоборот.
+    /// Класс, описывающий правила отображения <see cref="Phone"/> на таблицу и наоборот.
     /// </summary>
-    internal class CarMap : ClassMap<Car>
+    internal class CarMap : ClassMap<Phone>
     {
         /// <summary>
         /// Инициализирует новый экземпляр класса <see cref="CarMap"/>.
@@ -19,9 +20,9 @@ namespace ORM.Mappings
         {
             // this.Schema("dbo");
 
-            this.Table("Cars");
+            this.Table("Phone");
 
-            this.Id(x => x.Id_car).Not.Nullable();
+            this.Id(x => x.Id_phone).Not.Nullable();
 
             this.Map(x => x.Year).Not.Nullable();
             this.Map(x => x.Color).Not.Nullable();

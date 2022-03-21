@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain.Tests\\Domain.Tests.csproj": {}
+    "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain.Tests\\Domain.Tests.csproj": {}
   },
   "projects": {
-    "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain.Tests\\Domain.Tests.csproj": {
+    "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain.Tests\\Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain.Tests\\Domain.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain.Tests\\Domain.Tests.csproj",
         "projectName": "Domain.Tests",
-        "projectPath": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain.Tests\\Domain.Tests.csproj",
-        "packagesPath": "C:\\Users\\stank\\.nuget\\packages\\",
-        "outputPath": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain.Tests\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain.Tests\\Domain.Tests.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\stank\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain\\Domain.csproj"
+              "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain\\Domain.csproj"
               }
             }
           }
@@ -85,44 +81,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain\\Domain.csproj": {
+    "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\stank\\.nuget\\packages\\",
-        "outputPath": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\stank\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -136,8 +114,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Staff\\Staff.csproj": {
-                "projectPath": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Staff\\Staff.csproj"
+              "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Staff\\Staff.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Staff\\Staff.csproj"
               }
             }
           }
@@ -173,44 +151,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Staff\\Staff.csproj": {
+    "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Staff\\Staff.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Staff\\Staff.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Staff\\Staff.csproj",
         "projectName": "Staff",
-        "projectPath": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Staff\\Staff.csproj",
-        "packagesPath": "C:\\Users\\stank\\.nuget\\packages\\",
-        "outputPath": "D:\\LibraryForPractice-feature-3\\LibraryDemo\\Staff\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Staff\\Staff.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\PRAKTIKA_NAUCNA_ISLED\\LibraryDemo\\Staff\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\stank\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -257,26 +217,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

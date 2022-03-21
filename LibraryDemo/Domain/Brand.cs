@@ -1,5 +1,5 @@
-﻿// <copyright file="Brand.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
 
 namespace Domain
@@ -55,17 +55,17 @@ namespace Domain
         /// <summary>
         /// Коллекция машин.
         /// </summary>
-        public virtual ISet<Car> Cars { get; protected set; } = new HashSet<Car>();
+        public virtual ISet<Phone> Phons { get; protected set; } = new HashSet<Phone>();
 
         
         /// <summary>
         /// Добавить машине бренд.
         /// </summary>
-        /// <param name="car"> Машина. </param>
+        /// <param name="phone"> Машина. </param>
         /// <returns> <see langword="true"/> если машине был добавлен бренд. </returns>
-        public virtual bool AddCar(Car car)
+        public virtual bool AddPhone(Phone phone)
         {
-            return this.Cars.TryAdd(car) ?? throw new ArgumentNullException(nameof(car));
+            return this.Phons.TryAdd(phone) ?? throw new ArgumentNullException(nameof(phone));
         }
 
         /// <summary>

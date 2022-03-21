@@ -1,7 +1,6 @@
-﻿// <copyright file="Worker.cs" company=Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д... All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
-
 namespace Domain
 {
     using System;

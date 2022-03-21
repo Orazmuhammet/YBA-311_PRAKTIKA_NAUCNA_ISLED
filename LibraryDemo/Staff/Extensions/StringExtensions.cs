@@ -1,6 +1,7 @@
-﻿// <copyright file="StringExtensions.cs" company="Васильева М.А.">
-// Copyright (c) Васильева М.А.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
+
 
 namespace Staff.Extensions
 {

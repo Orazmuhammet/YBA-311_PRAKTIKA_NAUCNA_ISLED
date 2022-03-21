@@ -1,5 +1,5 @@
-﻿// <copyright file="CarTest.cs" company="Лёвин И. Д">
-// Copyright (c) Лёвин И. Д. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
 
 namespace Domain.Tests
@@ -12,43 +12,43 @@ namespace Domain.Tests
     /// The car tests.
     /// </summary>
     [TestFixture]
-    public class CarTest
+    public class PhoneTest
     {
         private Carsale carsale;
 
         [SetUp]
         public void Setup()
         {
-            this.carsale = new Carsale(1, DateTime.Now, 650000);
+            this.carsale = new Carsale(1, DateTime.Now, 60000);
         }
 
         [Test]
         public void ToString_ValidData_Success()
         {
             //arrange
-            var car = new Car(1, 1999, "синий", 600000);
+            var phone = new Phone(1, 2021, "синий", 60000);
             //act
-            var result = car.ToString();
+            var result = phone.ToString();
             //assert
-            Assert.AreEqual($"1999 синий 600000", result);
+            Assert.AreEqual($"2021 синий 60000", result);
         }
 
         [Test]
-        public void AddCarsaleToCar_ValidData_Success()
+        public void AddCarsaleToPhone_ValidData_Success()
         {
             // arrange
-            var car = GetCar(1999, "синий", 600000);
+            var phone = GetPhone(2021, "синий", 60000);
 
             // act
-            var result = car.AddCarsale(this.carsale);
+            var result = phone.AddCarsale(this.carsale);
 
             // assert
             Assert.AreEqual(true, result);
         }
 
-        private static Car GetCar(int year, string color, double price)
+        private static Phone GetPhone(int year, string color, double price)
         {
-            return new Car(1, year, color ?? "синий", price);
+            return new Phone(1, year, color ?? "синий", price);
         }
     }
 }

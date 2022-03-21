@@ -1,5 +1,5 @@
-﻿// <copyright file="Car.cs" company=Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д... All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
 
 namespace Domain
@@ -11,40 +11,40 @@ namespace Domain
     /// <summary>
     /// класс Автомобиль.
     /// </summary>
-    public class Car
+    public class Phone
     {
         /// <summary>
         /// конструктор 
         /// </summary>
 
-        public Car(int id_car, int year, string color, double price, Brand brand)
+        public Phone(int id_phone, int year, string color, double price, Brand brand)
         {
             if (brand == null)
             {
                 throw new ArgumentNullException(nameof(brand));
             }
 
-            this.Id_car = id_car;
+            this.Id_phone = id_phone;
             this.Year = year;
             this.Color = color;
             this.Price = price;
         }
 
-        public Car(int id_car, int year, string color, double price)
+        public Phone(int id_phone, int year, string color, double price)
         {
-            this.Id_car = id_car;
+            this.Id_phone = id_phone;
             this.Year = year;
             this.Color = color;
             this.Price = price;
         }
 
         /// <summary>
-        /// Инициализирует новый экземпляр класса <see cref="Car"/>.
+        /// Инициализирует новый экземпляр класса <see cref="Phone"/>.
         /// </summary>
         // в этом месте  protected - только для ORM
         //
         [Obsolete("For ORM only", true)]
-        protected Car()
+        protected Phone()
         {
         }
 
@@ -52,7 +52,7 @@ namespace Domain
         /// <summary>
         /// Уникальный идентификатор.
         /// </summary>
-        public virtual int Id_car { get; protected set; }
+        public virtual int Id_phone { get; protected set; }
 
         /// <summary>
         /// год выпуска.

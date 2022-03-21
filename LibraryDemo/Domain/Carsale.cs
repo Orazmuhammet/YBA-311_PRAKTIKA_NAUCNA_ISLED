@@ -1,5 +1,5 @@
-﻿// <copyright file="Book.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
 
 namespace Domain
@@ -14,11 +14,11 @@ namespace Domain
     /// </summary>
     public class Carsale
     {
-        public Carsale(int id_carsale, DateTime sale_date, double total_price, Car car, Worker worker)
+        public Carsale(int id_carsale, DateTime sale_date, double total_price, Phone phone, Worker worker)
         {
-            if (car == null)
+            if (phone == null)
             {
-                throw new ArgumentNullException(nameof(car));
+                throw new ArgumentNullException(nameof(phone));
             }
 
             if (worker == null)
@@ -63,7 +63,7 @@ namespace Domain
         /// </summary>
         public virtual double Total_price { get; protected set; }
 
-        public virtual Car Car { get; protected set; }
+        public virtual Phone Phone { get; protected set; }
 
         public virtual Worker Worker { get; protected set; }
 

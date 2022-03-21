@@ -1,6 +1,7 @@
-﻿// <copyright file="WorkerMapTests.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
+
 
 namespace ORM.Tests
 {
@@ -17,7 +18,7 @@ namespace ORM.Tests
         public void PersistenceSpecification_ValidData_Success()
         {
             // arrange
-            var worker = new Worker(1, "Лёвин И. Д.", "Продавец");
+            var worker = new Worker(1, "Нурмухаммедов О.Б", "Продавец");
 
             // act & assert
             new PersistenceSpecification<Worker>(this.Session)

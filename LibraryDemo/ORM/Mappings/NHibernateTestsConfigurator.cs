@@ -1,6 +1,7 @@
-﻿// <copyright file="NHibernateTestsConfigurator.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
+
 
 using FluentNHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;

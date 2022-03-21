@@ -1,6 +1,7 @@
-﻿// <copyright file="CarsaleMap.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
+
 
 namespace ORM.Mappings
 {
@@ -21,7 +22,7 @@ namespace ORM.Mappings
             this.Map(x => x.Sale_date).Not.Nullable();
             this.Map(x => x.Total_price).Not.Nullable();
 
-            this.References(x => x.Car);
+            this.References(x => x.Phone);
             this.References(x => x.Worker);
         }
     }

@@ -1,6 +1,7 @@
-﻿// <copyright file="BrandMap.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
+
 
 namespace ORM.Mappings
 {
@@ -26,7 +27,7 @@ namespace ORM.Mappings
             this.Map(x => x.Name_brand).Not.Nullable();
             this.Map(x => x.Country).Not.Nullable();
 
-            this.HasMany(x => x.Cars);
+            this.HasMany(x => x.Phons);
         }
     }
 }

@@ -1,6 +1,7 @@
-﻿// <copyright file="CarMapTests.cs" company="Лёвин И. Д.">
-// Copyright (c) Лёвин И. Д.. All rights reserved.
+﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+// Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
+
 
 namespace ORM.Tests
 {
@@ -18,24 +19,24 @@ namespace ORM.Tests
         public void PersistenceSpecification_ValidData_Success()
         {
             // arrange
-            var car = new Car(1,1999, "синий", 600000);
+            var phone = new Phone(1,2021, "синий", 60000);
 
             // act & assert
-            new PersistenceSpecification<Car>(this.Session)
-                .VerifyTheMappings(car);
+            new PersistenceSpecification<Phone>(this.Session)
+                .VerifyTheMappings(phone);
         }
         [Test]
         public void PersistenceSpecification_ValidComplexData_Success()
         {
             // arrange
 
-            var brand = new Brand(1, "lada vesta", "Россия");
+            var brand = new Brand(1, "Samsung galaxy s21", "Rossiya");
 
-            var car = new Car(1, 1999, "синий", 600000, brand);
+            var phone = new Phone(1, 2021, "синий", 60000, brand);
 
             // act & assert
-            new PersistenceSpecification<Car>(this.Session)
-                .VerifyTheMappings(car);
+            new PersistenceSpecification<Phone>(this.Session)
+                .VerifyTheMappings(phone);
         }
     }
 }
