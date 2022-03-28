@@ -1,4 +1,4 @@
-﻿// <copyright file="Book.cs" company="Nurmuhammedow.O">
+﻿+// <copyright file="Book.cs" company="Nurmuhammedow.O">
 // Copyright (c) Nurmuhammedow.O.. All rights reserved.
 // </copyright>
 
